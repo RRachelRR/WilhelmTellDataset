@@ -72,6 +72,7 @@ WilhelmTellDataset/
     -P2_Frontal_Complete.mp4
     -...   
   -...
+  -train_test_split.yml
   -README.md
   -LICENSE.md
 
@@ -83,7 +84,7 @@ WilhelmTellDataset/
 
 ## Test-Train Split
 
-[Add info on test train split here]
+The videos of bundles of tasks from each participant and angle were grouped into 102 training videos and 44 testing videos. A typical use case we envision for the dataset is to use a perception system capable to detect object interactions to automatically label frames from the training videos and then use the annotated frames to train an object detection or semantic segmentation model. The goal of this process is to teach the semantic segmentation model to detect functional parts of objects, i.e. parts particularly relevant for manifesting some affordance, both in contexts where the affordance is manifested and in contexts where the object sits idle. Some of the frames of the test videos are annotated to segment functional parts. For the test videos, annotations of when affordances manifest are also available, allowing to evaluate systems that would perform event segmentation. 
 
 ## Download link
 
@@ -108,8 +109,10 @@ This project is licensed under the CC-BY license - see the [LICENSE.md](LICENSE.
 
 ## Maintenance Plans
 
-[Add details on maintenance plans here]
+The videos, still images, and annotation files are hosted on university servers and on the [NEEMHub](https://vib.ai.uni-bremen.de/page/softwaretools/neemhub/), an infrastructure dedicated to maintaining artifacts created during our supporting collaborative research center, [EASE](https://ease-crc.org).
 
 ## Acknowledgments
 
-* [Project Acknowledgements here]
+This work was funded by the FET-Open Project #951846 [*MUHAI – Meaning and Understanding for Human-centric AI*](https://muhai.org) by the EU Pathfinder and Horizon 2020 Program.
+
+This work has also been supported by the German Research Foundation DFG, as part of Collaborative Research Center 1320 Project-ID 329551904 [*EASE -- Everyday Activity Science and Engineering*, University of Bremen](https://www.ease-crc.org). The research was conducted in subproject *P01 – Embodied semantics for the language of action and change: Combining analysis, reasoning and simulation*
